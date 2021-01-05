@@ -20,7 +20,39 @@
     <button class="k drum">k</button>
     <button class="l drum">l</button>
   </div>
+
+  <audio controls>
+    <source src="tom-1.mp3" type="audio/mpeg">
+    <source src="tom-2.mp3" type="audio/mpeg">
+    <source src="tom-3.mp3" type="audio/mpeg">
+    <source src="tom-4.mp3" type="audio/mpeg">
+    <source src="snare.mp3" type="audio/mpeg">
+    <source src="crash.mp3" type="audio/mpeg">
+    <source src="kick-bass.mp3" type="audio/mpeg">
+  </audio>
+
   <script src="index.js", charset="UTF-8">
+  document.getElementByClass("w drum").addEventListener("click", function() {
+    playAudio("tom-1.mp3");
+  });
+  document.getElementByClass("a drum").addEventListener("click", function() {
+    playAudio("tom-2.mp3");
+  });
+  document.getElementByClass("s drum").addEventListener("click", function() {
+    playAudio("tom-3.mp3");
+  });
+  document.getElementByClass("d drum").addEventListener("click", function() {
+    playAudio("tom-4.mp3");
+  });
+  document.getElementByClass("j drum").addEventListener("click", function() {
+    playAudio("snare.mp3");
+  });
+  document.getElementByClass("k drum").addEventListener("click", function() {
+    playAudio("crash.mp3");
+  });
+  document.getElementByClass("l drum").addEventListener("click", function() {
+    playAudio("kick-bass.mp3");
+  });
   </script>
   <footer>
     Made in Bienen
